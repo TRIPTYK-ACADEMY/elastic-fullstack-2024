@@ -1,9 +1,10 @@
 {
     "compilerOptions": {
-        "target": "es2016",
+        "target": "ESNext",
         "strict": true,
         "outDir": "dist",
         "skipLibCheck": true,
-        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "moduleResolution": "Node",
     },
 }
