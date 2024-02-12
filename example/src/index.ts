@@ -17,6 +17,17 @@ async function init() {
     const isRunning = await client.ping();
 
     console.log(isRunning);
+
+    const result = await client.search({
+        index: 'department',
+        query: {
+            match: {
+                name: 'Recherche'
+            }
+        }
+    });
+
+    console.log(result);
 }
 
 // eslint-disable-next-line @typescript-eslint/no-floating-promises
